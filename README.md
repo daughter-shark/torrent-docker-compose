@@ -1,4 +1,4 @@
-# `docker-compose` for a qBittorrent Container with OpenVPN
+# `docker-compose` for a qBittorrent with OpenVPN
 ## Installation
 1. Clone this repository
     * `git clone https://github.com/daughter-shark/torrent-docker-compose.git && cd torrent-docker-compose`
