@@ -12,7 +12,7 @@ For those, please refer to [arch-qbittorrentvpn](https://github.com/binhex/arch-
     * ⚠️ Make sure to correctly bind `volumes` with your local directories⚠️
 3. Create a `./config/openvpn` directory and put your OpenVPN config file in
     * `mkdir -p config/openvpn && mv your.ovpn config/openvpn`
-4. Modify `.env` template for your environment specifically
+4. Creat and modify `.env` for your environment specifically
 ```.env
 # This is meant to be a template, please adjust with your own values
 VPN_ENABLED=yes
