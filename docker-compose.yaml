@@ -10,7 +10,7 @@ services:
     container_name: openvpn_qbittorrent
     volumes:
       # Make sure to change this volume
-      - /your/host/download/directory:/data/downloads
+      - /your/host/download/directory:/data/torrents
       - ./config:/config
       - /etc/localtime:/etc/localtime:ro
     env_file: .env
