@@ -13,7 +13,20 @@ For those, please refer to [arch-qbittorrentvpn](https://github.com/binhex/arch-
 3. Create a `./config/openvpn` directory and put your OpenVPN config file in
     * `mkdir -p config/openvpn && mv your.ovpn config/openvpn`
 4. Modify `.env` template for your environment specifically
-
+```.env
+# This is meant to be a template, please adjust with your own values
+VPN_ENABLED=yes
+VPN_PROV=custom
+VPN_CLIENT=openvpn
+VPN_USER= #ovpn username
+VPN_PASS= #ovpn password
+LAN_NETWORK= # your LAN in CIDR comma-separated ex) 192.168.0.1/24,10.10.10.1/24
+NAME_SERVERS= # DNS comma-separated ex) 1.1.1.1,1.0.0.1
+WEBUI_PORT=8080
+UMASK=000
+PUID=0
+PGID=0
+```
 ## Running the container
 1. `docker-compose up -d`
 2. qBittorrent's WebUI is `0.0.0.0:8080` locally, or `hostname:8080` if you are approaching from another node in the network.
