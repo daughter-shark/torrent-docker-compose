@@ -1,0 +1,19 @@
+version: "3"
+services:
+  openvpntorrent:
+    image: binhex/arch-qbittorrentvpn:latest
+    ports:
+      - 6881:6881
+      - 6881:6881/udp
+      - 8080:8080
+      - 8118:8118
+    container_name: openvpn_qbittorrent
+    volumes:
+      # Make sure to change this volume
+      - /your/host/download/directory:/data/downloads
+      - ./config:/config
+      - /etc/localtime:/etc/localtime:ro
+    env_file: .env
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
