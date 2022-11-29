@@ -11,3 +11,5 @@
 ## Running the container
 1. `docker-compose up -d`
 2. qBittorrent's WebUI is `0.0.0.0:8080`
+3. ⚠️ ***make sure to change the default save path to `/data/downloads`*** ⚠️
+![image](https://user-images.githubusercontent.com/74416098/204620875-b6638307-0337-461b-a4ad-7ae60ae395b5.png)
