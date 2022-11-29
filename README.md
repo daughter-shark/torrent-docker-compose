@@ -1,4 +1,10 @@
 # `docker-compose` for a qBittorrent with OpenVPN
+
+## Introduction
+This `docker-compose` file is meant to be used by people who aren't really going to dive into the technical details.  
+It's really meant to be a quick and easy solution, so it will *not* include additional args or options.  
+For those, please refer to [arch-qbittorrentvpn](https://github.com/binhex/arch-qbittorrentvpn), and build on top of this compose file, or start from scratch.
+
 ## Installation
 1. Clone this repository
     * `git clone https://github.com/daughter-shark/torrent-docker-compose.git && cd torrent-docker-compose`
